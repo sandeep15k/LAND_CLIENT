@@ -1,0 +1,31 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(10px);
+    animation: fade 8s;
+    background-color: #00000042;
+    color: #fff;
+}
+.header a{
+    color: #fff;
+}
+.btn{
+    background-color: #f17c1f !important;
+    border-color: #f17c1f !important;
+    background-color: #7869e2 !important;
+    border-color: #7869e2 !important;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+       
+        opacity: .6;
+    }
+}
