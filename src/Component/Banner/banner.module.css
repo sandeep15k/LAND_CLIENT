@@ -2,6 +2,9 @@
     padding: 80px 0;
     min-height: 500px;
     position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 .banner::before{
     content: "";
@@ -51,3 +54,109 @@
         height: 500px;
     }
 }
+
+.banner_content{
+    animation: fadeout 8s linear;
+}
+@keyframes fadeout{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    83% { 
+        transform:translateY(-100%);
+        opacity: 0;
+     }
+    86% {transform:translateY(0%);
+    opacity: 1; }
+    89% { transform:translateY(-15%); }
+    92% { transform:translateY(0%); }
+    95% { transform:translateY(-9%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+.banner .title{
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+}
+.banner .title span{
+    color: #7869e2;
+}
+.tagline{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.search_content{
+    background: #ffffff;
+    padding: 0.7rem;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+.classic_search_box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.choose_propert_type {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 52px;
+    position: relative;
+    border-right: 1px solid #e2e6ed;
+}
+.search_content .full {
+    flex: 1;
+    width: 100%;
+}
+.input_with_icon{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.input_with_icon input{
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    
+    padding-left: 35px;
+    border: none;
+    font-size: 15px;
+}
+.input_with_icon img {
+    position: absolute;
+    left: 7px;
+}
+.search_content .btn {
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7869e2 ;
+    border-color: #7869e2 ;
+}
+
+
+@media (max-width: 767px){}
+@media (max-width: 767px){
+    .classic_search_box {
+        flex-direction: column;
+    }
+    .navBtns{
+        width: 100%;
+    }
+    .input_with_icon input{
+        border: 2px solid #e2e8ed;
+    }
+    .choose_propert_type{
+        border: none;
+    }
+}
+@media (max-width: 767px){}
+
+
